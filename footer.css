@@ -4,7 +4,6 @@
   background: rgba(10, 10, 10, 0.95);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   backdrop-filter: blur(20px);
   border-top: 1px solid rgba(255, 215, 0, 0.2);
 }
@@ -69,23 +68,88 @@
   filter: brightness(1) grayscale(0);
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* RESPONSIVE - Tablette (768px - 1024px) */
+@media (max-width: 1024px) {
   .footer {
-    padding: 30px 20px 20px;
+    padding: 35px 25px 25px;
+  }
+  
+  .footer-ligne {
+    width: 90%;
   }
   
   .footer-logos {
-    gap: 30px;
+    gap: 35px;
+  }
+}
+
+/* RESPONSIVE - Mobile et tablette petite (max 768px) */
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 60px;
+    padding: 25px 15px 20px;
+  }
+  
+  .footer-ville {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .footer-mail a {
+    font-size: 1.1rem;
+  }
+  
+  .footer-ligne {
+    width: 85%;
+    height: 1.5px;
+    margin: 0 auto 25px;
+  }
+  
+  .footer-logos {
+    gap: 25px;
+    flex-wrap: wrap; /* Permet le passage à la ligne si trop d'icônes */
   }
   
   .logo-social {
-    width: 40px;
-    height: 40px;
-  }
-
-  .footer-ligne {
-    width: 80%;
+    width: 38px;
+    height: 38px;
   }
 }
+
+/* RESPONSIVE - Mobile très petit (max 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 12px 15px;
+  }
+  
+  .footer-ville {
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+  }
+  
+  .footer-mail a {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .footer-ligne {
+    width: 90%;
+    height: 1px;
+  }
+  
+  .footer-logos {
+    gap: 20px;
+    padding-top: 10px;
+  }
+  
+  .logo-social {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .logo-social:hover {
+    transform: scale(1.15) translateY(-2px);
+  }
+}
+
 
