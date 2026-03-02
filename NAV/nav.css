@@ -1,0 +1,70 @@
+/* NAV FIXE - TRANSPARENT - RESPONSIVE */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.1);           
+  backdrop-filter: blur(15px);              
+  -webkit-backdrop-filter: blur(15px);      
+
+ mask-image: linear-gradient(
+    to top, 
+    transparent 0%,      /* HAUT = complètement flou */
+    rgba(255,255,255,0.3) 15%,  /* milieu haut flou léger */
+    rgba(255,255,255,1) 50%,    /* milieu NET */
+    rgba(255,255,255,1) 100%    /* BAS = parfaitement net */
+  );
+  -webkit-mask-image: linear-gradient(
+    to top, 
+    transparent 0%, 
+    rgba(255,255,255,0.3) 15%, 
+    rgba(255,255,255,1) 50%, 
+    rgba(255,255,255,1) 100%
+  );
+
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover { 
+    color: #5e2b98; 
+}
+
+nav li a.active {
+  color: #5e2b98;
+  background: rgba(46, 20, 211, 0.15); /* BOX TRANSPARENTE */
+  backdrop-filter: blur(10px);          /* effet verre dépoli */
+  border: 1px solid rgba(68, 0, 255, 0.3); /* bordure fine dorée */
+  border-radius: 25px;                   /* coins arrondis */
+  box-shadow: 0 4px 15px rgba(34, 0, 255, 0.2); /* lueur subtile */
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav ul { gap: 20px; flex-wrap: wrap; }
+  nav li a { padding: 8px 15px; }
+}
+

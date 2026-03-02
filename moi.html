@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio | Melih CELIKYUREK </title>
+    <link rel="stylesheet" href="NAV/nav.css">
+    <link rel="stylesheet" href="moi.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="main.html">Accueil</a></li>
+            <li><a href="moi.html">À propos de moi</a></li>
+            <li><a href="RP.html">Réalisation professionnelles</a></li>
+            <li><a href="synthese.html">Synthèse</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li><a href="veille.html">Veille</a></li>  
+    </nav>
+ <div class="container">
+    <!-- BLOC 1 : Qui suis-je + CV -->
+    <div class="bloc">
+      <h2 class="titre-section">Qui suis-je ?</h2>
+      <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 30px;">
+        Je m'appelle Melih Celikyurek, j'ai 19 ans et je suis actuellement étudiant en 2ème année de BTS SIO option SISR au lycée Gustave Eiffel à Bordeaux. J'ai découvert ma passion pour l'informatique dès mon plus jeune âge en bidouillant tous les ordinateur, téléphone, tablette et télévision qui passait dans mes mains puis en grandissant et en explorant de plus en plus ce monde j'ai commencé a m'interesser
+        à la cybersécurité pour tenter de contourner les contrôles parentale et mot de passe que mes parents me mettais pour eviter que je passe mes journée sur un écran
+        appliquer mes compétences en infrastructure et systèmes.
+      </p>
+      
+      <div class="cv-container" onclick="ouvrirCV()">
+        <h3 style="color: black; margin-bottom: 15px;">Mon CV</h3>
+        <img src="cv-mini.jpg" alt="CV" class="cv-mini" id="cvMini">
+      </div>
+    </div>
+
+    <!-- DEUX BLOCS CÔTE À CÔTE -->
+    <div class="blocs-cote-a-cote">
+      <!-- Parcours Scolaire -->
+      <div class="bloc">
+        <h3 class="titre-section"> 🎓 Parcours Scolaire</h3>
+        <ul style="list-style: none; font-size: 1rem;">
+          <li style="margin-bottom: 15px;">• BTS SIO option SISR (actuellement)
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;Lycée Gustave Eiffel </a>
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;2024 - 2026</a>
+          </li>
+          <li style="margin-bottom: 15px;">• BAC STI2D option ITEC
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;Lycée polyvalent les iris </a>
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 - 2024</a>
+          </li>
+          <li style="margin-bottom: 15px;">• Brevet
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;Collège François Mauriac</a>
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 - 2021</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Parcours Pro -->
+      <div class="bloc">
+        <h3 class="titre-section">💼 Parcours professionnelles</h3>
+        <ul style="list-style: none; font-size: 1rem;">
+          <li style="margin-bottom: 15px;">• Stellar //
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;Bordeaux </a>
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26 Mai 2025 - 27 Juin 2025 (5 semaines)</a>
+          </li>
+          <li style="margin-bottom: 15px;">• Bses33
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;Bordeaux </a>
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;juillet 2025 - Juillet 2025 (2semaines)</a>
+          </li>
+          <li style="margin-bottom: 15px;">• Stellar //
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;Bordeaux </a>
+            <a style="color: black;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19 Janvier 2026 - 13 Mars 2026 (2 mois)</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CV -->
+  <div class="modal" id="modalCV">
+    <span class="fermer" onclick="fermerCV()">X</span>
+    <img src="Mouhahaha2.jpg" alt="CV Complet" id="cvGrand">
+  </div>
+
+  <div class="certifications">
+    <h2 class="titre-section" style="text-align: center; margin-bottom: 50px;">Mes Certifications</h2>
+    
+    <div class="grille-certifs">
+      <a href="certification/Attestation SecNum Finale Melih Celikyurek.pdf" target="_blank" class="lien">
+        <div class="certif-bloc">
+          <div class="certif-icone"><img src="logo_secnum.webp" width="95%"></div>
+          <h3>SecNum Academie</h3>
+          <p>🔒Cybersécurité</p><br>
+          <span class="date">2025</span>
+        </div>
+      </a>
+      
+      <a href="certification/certifcnil.pdf" target="_blank" class="lien">
+        <div class="certif-bloc">
+          <div class="certif-icone"><img src="CNIL_logo_2016.svg.png" width="60%"></div>
+          <h3>CNIL: Mooc RGPD</h3>
+          <p>📎 Protection des données</p><br>
+          <span class="date">2025</span>
+        </div>
+      </a>
+
+
+      <a href="certification/azure.pdf" target="_blank" class="lien">
+        <div class="certif-bloc">
+          <div class="certif-icone"><img src="Azure-Logo-2020-present.png" width="70%"></div>
+          <h3>Azure</h3>
+          <p>☁️ Cloud Microsoft</p><br>
+          <span class="date">2025</span>
+      </div>
+      </a>
+      
+
+      <a href="certification/pix.pdf" target="_blank" class="lien">
+        <div class="certif-bloc">
+          <div class="certif-icone"><img src="logo-pix-550x366.jpg" width="60%"></div>
+          <h3>PIX</h3>
+          <p>🎯 Compétence numérique</p><br>
+          <span class="date">2026</span>
+      </div>
+      </a>
+    </div>
+  </div>
+  <div>
+    <section style="padding: 80px 20px; display: flex; justify-content: center; align-items: center;">
+                <a href="RP.html" class="btn-fleche">
+                <span class="fleche">→</span>
+                </a>
+            </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-ville">Bordeaux (33370)</div>
+    
+    <div class="footer-mail">
+      <a href="mailto:celikyurek.m24@gmail.com">celikyurek.m24@gmail.com</a>
+    </div>
+
+    <div class="footer-ligne"></div>
+
+    <div class="footer-logos">
+      <a href="https://linkedin.com/in/tonprofil" target="_blank">
+        <img src="linkedin-original.svg" alt="LinkedIn" class="logo-social">
+      </a>
+      <a href="https://github.com/tongithub" target="_blank">
+        <img src="Github-Logo-PNG-HD-Image.webp" alt="GitHub" class="logo-social">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="NAV/nav.js"></script>
+<script src="moi.js"></script>
+</html>

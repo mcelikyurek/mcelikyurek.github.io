@@ -1,0 +1,54 @@
+**{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .hero {
+      height: 15vh;                /* prend toute la hauteur de l’écran */
+      display: flex;
+      align-items: center;          /* centre verticalement */
+      justify-content: center;      /* centre horizontalement */
+      text-align: center;
+      color: white;
+
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url(Mouhahaha2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-content {
+      position: relative; /* pour passer au-dessus du ::before */
+      padding: 20px;
+    }
+
+.hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;              /* ExtraBold comme ton image */
+      font-size: clamp(3rem, 8vw, 6rem);  /* Responsive : s'adapte à tous les écrans */
+      letter-spacing: -0.03em;       /* Espace entre lettres comme "PRÉSENTATION" */
+      margin-bottom: 0.5em;
+      text-transform: uppercase;     /* MAJUSCULES */
+    }
+
+    .hero p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1rem, 1vw, 2rem);
+      letter-spacing: -0.02em;
+    }
+
+    

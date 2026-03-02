@@ -1,0 +1,94 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .hero {
+      height: 100vh;                /* prend toute la hauteur de l’écran */
+      display: flex;
+      align-items: center;          /* centre verticalement */
+      justify-content: center;      /* centre horizontalement */
+      text-align: center;
+      color: white;
+
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:url(Mouhahaha2.jpg); /* assombrit l’image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-content {
+      position: relative; /* pour passer au-dessus du ::before */
+      padding: 20px;
+    }
+
+.hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;              /* ExtraBold comme ton image */
+      font-size: clamp(3rem, 8vw, 6rem);  /* Responsive : s'adapte à tous les écrans */
+      letter-spacing: -0.03em;       /* Espace entre lettres comme "PRÉSENTATION" */
+      margin-bottom: 0.5em;
+      text-transform: uppercase;     /* MAJUSCULES */
+    }
+
+    .hero p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      letter-spacing: -0.02em;
+    }
+
+  .btn-fleche {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 80px;                 /* ✅ LARGEUR FIXE = ROND */
+  height: 80px;                /* ✅ HAUTEUR FIXE = ROND */
+  padding: 18px 32px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+  margin-top: auto;       /* force en bas */
+  border-radius: 50%;
+}
+
+.btn-fleche:hover {
+  background: rgba(46, 20, 211, 0.15);
+  border-color: #5e2b98;
+  color: #5e2b98;
+  transform: translateX(10px);
+}
+
+.fleche {
+  font-size: 1.5rem;           /* flèche plus grande */
+  font-weight: 900;
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.btn-fleche:hover .fleche {
+  transform: translateX(8px);
+}
