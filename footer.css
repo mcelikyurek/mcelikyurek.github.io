@@ -2,6 +2,9 @@
   margin-top: 80px;
   padding: 40px 30px 30px;
   background: rgba(10, 10, 10, 0.95);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   backdrop-filter: blur(20px);
   border-top: 1px solid rgba(255, 215, 0, 0.2);
 }
