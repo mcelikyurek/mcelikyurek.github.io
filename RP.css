@@ -176,79 +176,38 @@ body {
 @media (max-width: 768px) {
     .projets-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(7, 1fr);
-        gap: 25px;
+        gap: 30px; /* ESPACE UNIFORME */
+        padding: 0 10px;
     }
+
+
     
-    .projet-centre {
-        grid-row: 7;
-        max-width: 90%;
-        height: 320px;
-        padding: 40px 25px;
-    }
-    
-    .projet-bloc {
+    .projet-bloc, .projet-centre {
+        max-width: 100% !important;
         height: 280px;
         padding: 30px 20px;
-        max-width: 90%;
     }
     
     .projet-image { font-size: 3.5rem; }
-    .projet-centre .projet-image.grand { font-size: 5rem; }
 }
 
 @media (max-width: 480px) {
-    .container { padding: 40px 15px; }
-    .projet-bloc { height: 260px; padding: 25px 15px; }
-}
-
-
-  .btn-fleche {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width:130px;                 
-  height: 130px;                
-  padding: 10px 2px;
-  background: rgba(186, 163, 163, 0.159);
-  color: rgba(101, 101, 101, 0.416);
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border: 2px solid rgba(101, 101, 101, 0.416);
-  border-radius: 50px;
-  backdrop-filter: blur(15px);
-  transition: all 0.3s ease;
-  margin-top: auto;    
-  border-radius: 50%;
-}
-
-.btn-fleche:hover {
-  background: rgba(46, 20, 211, 0.15);
-  border-color: #5e2b98;
-  color: #5e2b98;
-  transform: translateX(10px);
-}
-
-.fleche {
-  font-size: 2.5rem;           
-  font-weight: 900;
-  transition: transform 0.3s ease;
-  line-height: 1;
-}
-
-.btn-fleche:hover .fleche {
-  transform: translateX(8px);
-}
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .blocs-cote-a-cote { grid-template-columns: 1fr; }
-      .titre-section { font-size: 2rem; }
-      .bloc { padding: 30px 20px; }
+.projets-grid {
+        grid-template-columns: 1fr;
+        gap: 30px; /* ESPACE UNIFORME */
+        padding: 0 10px;
     }
+    .projet-bloc, .projet-centre { 
+        height: 260px; 
+        padding: 25px 15px; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .projets-grid {
+        grid-template-columns: 1fr;
+        gap: 35px; /* ESPACE UNIFORME */
+        padding: 0 15px;
+    }
+}
 

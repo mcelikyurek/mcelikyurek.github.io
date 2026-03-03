@@ -227,48 +227,6 @@
   }
 }
 
-  .btn-fleche {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 80px;                 
-  height: 80px;                
-  padding: 18px 32px;
-  background: rgba(148, 125, 125, 0.15);
-  color: black;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  border: 2px solid rgb(101, 101, 101);
-  border-radius: 50px;
-  backdrop-filter: blur(15px);
-  transition: all 0.3s ease;
-  margin-top: auto;    
-  border-radius: 50%;
-}
-
-.btn-fleche:hover {
-  background: rgba(46, 20, 211, 0.15);
-  border-color: #5e2b98;
-  color: #5e2b98;
-  transform: translateX(10px);
-}
-
-.fleche {
-  font-size: 1.5rem;           
-  font-weight: 900;
-  transition: transform 0.3s ease;
-  line-height: 1;
-}
-
-.btn-fleche:hover .fleche {
-  transform: translateX(8px);
-}
-
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .blocs-cote-a-cote { grid-template-columns: 1fr; }
