@@ -1,25 +1,24 @@
-  .btn-fleche {
+.btn-fleche {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  width:100px;                 
-  height: 100px;                
-  padding: 10px 2px;
+  gap: clamp(4px, 1vw, 8px);        /* gap adaptatif */
+  width: clamp(80px, 12vw, 100px);  /* taille adaptative */
+  height: clamp(80px, 12vw, 100px);
+  padding: clamp(8px, 1.5vw, 12px);
   background: rgb(255, 255, 255);
   color: rgba(179, 158, 158, 0.416);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);  /* texte adaptatif */
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   border: 2px solid rgba(179, 158, 158, 0.416);
-  border-radius: 50px;
+  border-radius: 50%;
   backdrop-filter: blur(15px);
   transition: all 0.3s ease;
-  margin-top: auto;    
-  border-radius: 50%;
+  margin-top: auto;
 }
 
 .btn-fleche:hover {
@@ -30,7 +29,7 @@
 }
 
 .fleche {
-  font-size: 2.5rem;           
+  font-size: clamp(1.8rem, 4vw, 2.5rem);  /* flèche adaptative */
   font-weight: 900;
   transition: transform 0.3s ease;
   line-height: 1;
@@ -38,4 +37,30 @@
 
 .btn-fleche:hover .fleche {
   transform: translateX(8px);
+}
+
+/* RESPONSIVE - Précision pour petits écrans */
+@media (max-width: 480px) {
+  .btn-fleche {
+    width: 70px;
+    height: 70px;
+    gap: 3px;
+    font-size: 0.95rem;
+  }
+  
+  .fleche {
+    font-size: 1.8rem;
+  }
+  
+  .btn-fleche:hover {
+    transform: translateX(6px); /* moins de décalage */
+  }
+}
+
+@media (max-width: 360px) {
+  .btn-fleche {
+    width: 65px;
+    height: 65px;
+    font-size: 0.9rem;
+  }
 }
