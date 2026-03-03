@@ -41,7 +41,8 @@ body {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding-bottom: 10px;
+    padding-top: 50px;
 }
 
 /* GRILLE PROJETS */
@@ -49,7 +50,6 @@ body {
 .projets-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 40px 50px; /* 40px vertical, 50px horizontal */
     justify-items: center;
     max-width: 1200px;
@@ -164,6 +164,14 @@ body {
     transform: translateX(10px);
 }
 
+.ligne {
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #5e2b98, transparent);
+    margin: 60px auto;
+    border-radius: 1px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .projets-grid {
@@ -200,18 +208,18 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 80px;                 
-  height: 80px;                
-  padding: 18px 32px;
-  background: rgba(148, 125, 125, 0.15);
-  color: black;
+  width:130px;                 
+  height: 130px;                
+  padding: 10px 2px;
+  background: rgba(186, 163, 163, 0.159);
+  color: rgba(101, 101, 101, 0.416);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border: 2px solid rgb(101, 101, 101);
+  border: 2px solid rgba(101, 101, 101, 0.416);
   border-radius: 50px;
   backdrop-filter: blur(15px);
   transition: all 0.3s ease;
@@ -227,7 +235,7 @@ body {
 }
 
 .fleche {
-  font-size: 1.5rem;           
+  font-size: 2.5rem;           
   font-weight: 900;
   transition: transform 0.3s ease;
   line-height: 1;

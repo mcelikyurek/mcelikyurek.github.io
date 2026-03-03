@@ -232,18 +232,18 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 80px;                 
-  height: 80px;                
+  width:130px;                 
+  height: 130px;                
   padding: 18px 32px;
-  background: rgba(148, 125, 125, 0.15);
-  color: black;
+  background: rgba(186, 163, 163, 0.159);
+  color: rgba(101, 101, 101, 0.416);
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border: 2px solid rgb(101, 101, 101);
+  border: 2px solid rgba(101, 101, 101, 0.416);
   border-radius: 50px;
   backdrop-filter: blur(15px);
   transition: all 0.3s ease;
@@ -259,7 +259,7 @@
 }
 
 .fleche {
-  font-size: 1.5rem;           
+  font-size: 2.5rem;           
   font-weight: 900;
   transition: transform 0.3s ease;
   line-height: 1;
