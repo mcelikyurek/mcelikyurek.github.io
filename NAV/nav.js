@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const liensNav = document.querySelectorAll('nav a');
-  const pageActuelle = window.location.pathname.split('/').pop() || 'index.html';
+  const pageActuelle = window.location.pathname.split('/').pop() || '/index.html';
   
   liensNav.forEach(lien => {
     const href = lien.getAttribute('href');
