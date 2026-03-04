@@ -16,7 +16,7 @@
       justify-content: center;      /* centre horizontalement */
       text-align: center;
       color: white;
-
+      padding-bottom: 1500px;
       position: relative;
     }
 
@@ -46,5 +46,3 @@
       font-size: clamp(1rem, 1vw, 2rem);
       letter-spacing: -0.02em;
     }
-
-    

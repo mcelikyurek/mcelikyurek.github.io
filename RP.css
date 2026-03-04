@@ -8,26 +8,6 @@ body {
     padding-top: 80px;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    backdrop-filter: blur(20px);
-    padding: 20px 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
 .back-btn {
     color: #5e2b98;
     text-decoration: none;
