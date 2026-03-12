@@ -1,3 +1,19 @@
+.rp-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.rp-titre p {
+    text-align: center; 
+    color: #000; 
+    font-size: 60px; 
+    font-style: italic ;
+}
+
 .apm {
       height: 100vh;                /* prend toute la hauteur de l’écran */
       display: flex;

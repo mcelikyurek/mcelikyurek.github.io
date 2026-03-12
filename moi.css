@@ -103,9 +103,7 @@
 
     .cv-mini {
       width: 100%;
-      max-width: 300px;
-      height: 400px;
-      object-fit: cover;
+      height: 100px;
       border-radius: 15px;
       transition: all 0.3s ease;
     }
@@ -115,7 +113,13 @@
       box-shadow: 0 20px 50px ;
     }
 
-    /* MODAL CV agrandi */
+    .rendu-emoji {
+    font-size: 2.3rem;
+    display: block;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
     .modal {
       display: none;
       position: fixed;
@@ -213,6 +217,7 @@
   font-weight: 800;
   font-size: 0.95rem;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
