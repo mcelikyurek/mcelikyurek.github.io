@@ -99,6 +99,27 @@
         0 0 0 1px rgba(46, 20, 211, 0.15);
     }
     
+    .ovale {
+      display: inline-block;
+      background: rgba(46, 20, 211, 0.15);
+      color: black;
+      padding: 3px 10px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+
+    .ovale:hover {
+      background: transparent;
+      border-color: #5e2b98;
+      color: #5e2b98;
+      background-color: rgba(46, 20, 211, 0.15);
+      transform: translateX(10px);
+    }
+
     @media (max-width: 768px) {
       .logo img {
         max-width: 280px;
