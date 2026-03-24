@@ -14,9 +14,9 @@
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="moi.html">À propos de moi</a></li>
+            <li><a href="stage.html">Stage</a></li>
             <li><a href="RP.html">Réalisation professionnelles</a></li>
             <li><a href="synthese.html">Synthèse</a></li>
-            <li><a href="stage.html">Stage</a></li>
             <li><a href="veille.html">Veille</a></li>  
     </nav>
  <div class="container">
@@ -28,8 +28,7 @@
       </p>
       
       <div class="cv-container" onclick="ouvrirCV()">
-        <h3 style="color: black; margin-bottom: 15px;">Mon CV</h3>
-        <span alt="CV" class="cv-mini" id="cvMini">📄</span>
+        <span alt="CV" class="cv-mini" id="cvMini">👀 voir mon CV</span>
       </div>
     </div>
 
@@ -75,13 +74,115 @@
       </div>
     </div>
   </div>
+  
+    <!-- BLOC 1 : Qui suis-je + CV -->
+    <div class="banner">
+      
+      <h2 class="titre-section" style="color: #5e2b98; font-size: 50px;">BTS SIO</h2>
+      <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 30px;">Le Brevet de Technicien Supérieur Services Informatiques aux Organisations (BTS SIO) est une formation de deux ans qui prépare aux métiers de l’informatique, que ce soit en tant qu’administrateur réseau ou développeur. Ce diplôme permet une insertion directe sur le marché du travail ou une poursuite d’études.
+        Deux options sont proposées :</p>
+        <li>SLAM : forme des professionnels spécialisés dans le développement d’applications.</li>
+        <li>SISR : forme des professionnels spécialisés dans les réseaux et les équipements informatiques. </li>
+    </div>
 
+      <div class="banner">
+    <div class="ligne"></div>
+    <h2 class="titre-section" style="text-align: center; margin-bottom: 50px; color: #5e2b98; font-size: 50px;">Mes Compétences</h2>
+ 
+    <div class="competences-grid">
+ 
+      <div class="comp-bloc">
+        <div class="comp-header">
+          <span class="comp-icon">🌐</span>
+          <div>
+            <div class="comp-title">Systèmes & Réseaux</div>
+            <div class="comp-subtitle">Infrastructure</div>
+          </div>
+        </div>
+        <div class="comp-divider"></div>
+        <ul class="comp-list">
+          <li><span class="comp-check">✓</span>Windows Serveur</li>
+          <li><span class="comp-check">✓</span>Linux Debian</li>
+          <li><span class="comp-check">✓</span>Windows Client</li>
+          <li><span class="comp-check">✓</span>Active Directory</li>
+          <li><span class="comp-check">✓</span>Cisco Packet Tracer</li>
+          <li><span class="comp-check">✓</span>Apache / Nginx</li>
+        </ul>
+      </div>
+ 
+      <div class="comp-bloc">
+        <div class="comp-header">
+          <span class="comp-icon">☁️</span>
+          <div>
+            <div class="comp-title">Virtualisation</div>
+            <div class="comp-subtitle">Cloud & Sauvegarde</div>
+          </div>
+        </div>
+        <div class="comp-divider"></div>
+        <ul class="comp-list">
+          <li><span class="comp-check">✓</span>VirtualBox</li>
+          <li><span class="comp-check">✓</span>Proxmox VE</li>
+          <li><span class="comp-check">✓</span>VMware</li>
+        </ul>
+      </div>
+ 
+      <div class="comp-bloc">
+        <div class="comp-header">
+          <span class="comp-icon">📊</span>
+          <div>
+            <div class="comp-title">Supervision</div>
+            <div class="comp-subtitle">MCO — Maintenance</div>
+          </div>
+        </div>
+        <div class="comp-divider"></div>
+        <ul class="comp-list">
+          <li><span class="comp-check">✓</span>GLPI — Gestion parc</li>
+          <li><span class="comp-check">✓</span>Zoiper — VoIP</li>
+        </ul>
+      </div>
+ 
+      <div class="comp-bloc">
+        <div class="comp-header">
+          <span class="comp-icon">🛡️</span>
+          <div>
+            <div class="comp-title">Cybersécurité</div>
+            <div class="comp-subtitle">Sécurité</div>
+          </div>
+        </div>
+        <div class="comp-divider"></div>
+        <ul class="comp-list">
+          <li><span class="comp-check">✓</span>Kali Linux</li>
+          <li><span class="comp-check">✓</span>pfSense — Firewall</li>
+          <li><span class="comp-check">✓</span>Wireshark — Analyse réseau</li>
+        </ul>
+      </div>
+ 
+      <div class="comp-bloc">
+        <div class="comp-header">
+          <span class="comp-icon">👨‍💻</span>
+          <div>
+            <div class="comp-title">Scripting & Dev</div>
+            <div class="comp-subtitle">Automation</div>
+          </div>
+        </div>
+        <div class="comp-divider"></div>
+        <ul class="comp-list">
+          <li><span class="comp-check">✓</span>HTML / CSS / JavaScript</li>
+          <li><span class="comp-check">✓</span>Python</li>
+          <li><span class="comp-check">✓</span>PowerShell</li>
+          <li><span class="comp-check">✓</span>SQL</li>
+        </ul>
+      </div>
+ 
+    </div>
+  </div>
+    
   <!-- MODAL CV -->
   <div class="modal" id="modalCV">
     <span class="fermer" onclick="fermerCV()">X</span>
     <img src="CV.png" alt="CV Complet" id="cvGrand">
   </div>
-
+  
   <div class="certifications">
     <h2 class="titre-section" style="text-align: center; margin-bottom: 50px;">Mes Certifications</h2>
     
@@ -127,7 +228,7 @@
   </div>
   <div>
     <section style="padding: 80px 20px; display: flex; justify-content: center; align-items: center;">
-                <a href="RP.html" class="btn-fleche">
+                <a href="stage.html" class="btn-fleche">
                 <span class="fleche">→</span>
                 </a>
             </div>

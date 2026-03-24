@@ -230,6 +230,178 @@
   font-size: 0.95rem;
 }
 
+  /* ── Top info block ── */
+  .top-info {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .top-info .session {
+    text-align: right;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 4px;
+  }
+  .top-info .titre {
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 16px;
+    margin-bottom: 6px;
+    font-size: 10px;
+  }
+  .info-grid div { font-weight: bold; }
+
+  /* ── Main table ── */
+  .wrapper {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 1000px;
+    table-layout: fixed;
+  }
+
+  td, th {
+    border: 1px solid #999;
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+    vertical-align: middle;
+  }
+
+  /* Column widths */
+  col.c-label  { width: 200px; }
+  col.c-period { width: 80px; }
+  col.c-check  { width: 28px; }
+
+  /* ── Header rows ── */
+  .h-main {
+    background: #1155CC;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 4px;
+    font-size: 9.5px;
+  }
+  .h-main.italic {
+    font-style: italic;
+    font-size: 9px;
+    background: #0d3d8a;
+  }
+  .h-period-label {
+    background: #1155CC;
+    color: #fff;
+    font-weight: bold;
+    font-size: 8.5px;
+    text-align: center;
+    padding: 4px 2px;
+  }
+
+  /* Rotated sub-header cells */
+  .h-sub {
+    background: #4A86E8;
+    color: #fff;
+    font-size: 8px;
+    text-align: center;
+    padding: 4px 2px;
+    height: 120px;
+    vertical-align: bottom;
+  }
+  .h-sub span {
+    display: block;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    line-height: 1.2;
+    max-height: 114px;
+    overflow: hidden;
+  }
+  .h-sub.no-fill {
+    background: #fff;
+    color: #000;
+  }
+
+  /* ── Section header rows ── */
+  .section-row td {
+    background: #CFE2F3;
+    font-weight: bold;
+    font-size: 9.5px;
+    text-align: center;
+    padding: 5px 4px;
+    border-top: 2px solid #1155CC;
+    border-bottom: 2px solid #1155CC;
+  }
+
+  /* ── Data rows ── */
+  .data-row td {
+    padding: 3px 5px;
+  }
+  .data-row td.label {
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 1.35;
+  }
+  .data-row td.period {
+    text-align: center;
+    font-size: 8.5px;
+    font-weight: bold;
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+  .data-row td.check {
+    text-align: center;
+    padding: 2px;
+  }
+  .data-row:nth-child(even) td {
+    background: #f5f8ff;
+  }
+  .data-row:nth-child(even) td.filled {
+    background: #4A86E8;
+  }
+
+  td.filled {
+    background: #4A86E8;
+  }
+
+  .projet-link {
+    display: inline-block;
+    background: rgba(46, 20, 211, 0.15);
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.projet-link:hover {
+    background: transparent;
+    border-color: #5e2b98;
+    color: #5e2b98;
+    background-color: rgba(46, 20, 211, 0.15);
+    transform: translateX(10px);
+}
+
+.projet-bloc {
+    align-items: center;
+    justify-content: center;
+    padding: 40px 25px;
+    text-align: center;
+    
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .grille-certifs {

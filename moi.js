@@ -17,3 +17,5 @@
     function fermerCV() {
       document.getElementById('modalCV').classList.remove('active');
     }
+
+    

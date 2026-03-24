@@ -1,7 +1,7 @@
 .footer {
-
+  height: auto;
   padding: 40px 30px 30px;
-  background: rgba(10, 10, 10, 0.95);
+  background: #1e293b;
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(20px);
