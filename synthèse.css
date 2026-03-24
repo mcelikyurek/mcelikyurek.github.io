@@ -306,19 +306,14 @@
   /* Rotated sub-header cells */
   .h-sub {
     background: #4A86E8;
-    color: #fff;
+    color: black;
     font-size: 8px;
     text-align: center;
     padding: 4px 2px;
     height: 120px;
-    vertical-align: bottom;
   }
   .h-sub span {
     display: block;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    white-space: nowrap;
-    line-height: 1.2;
     max-height: 114px;
     overflow: hidden;
   }
