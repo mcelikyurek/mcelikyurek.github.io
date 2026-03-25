@@ -259,6 +259,7 @@
   /* ── Main table ── */
   .wrapper {
     overflow-x: auto;
+    margin: 0 auto;
   }
 
   table {
